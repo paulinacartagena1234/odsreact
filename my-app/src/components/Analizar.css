@@ -1,0 +1,90 @@
+/* Contenedor principal */
+.analizar {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Título */
+.analizartitulo {
+  color: #00070e;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Input para cargar archivo */
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  font-size: 1em;
+  padding: 10px;
+  border: 2px solid #2e7d32;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f4f4f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #2980b9;
+  background-color: #ecf0f1;
+}
+
+/* Información del archivo cargado */
+p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  margin-top: 20px;
+}
+
+/* Botón para analizar */
+.btn-analizar {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-analizar:hover {
+  background-color: #218838;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Círculo de carga (spinner) */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #4caf50;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

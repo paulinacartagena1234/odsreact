@@ -1,0 +1,70 @@
+.inicio {
+    margin: 20px auto;
+    padding: 20px 40px;
+    /* Añadido más padding a los lados */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 800px;
+    /* Cambiado de 600px a 800px para hacerlo más ancho */
+    background-color: #f8f8f8;
+}
+
+.titulo {
+    color: #00070e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    /* Centrar el título */
+}
+
+.text {
+    font-size: 1.1em;
+    color: #070707;
+    line-height: 1.6;
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.ods-section {
+    margin-top: 20px;
+}
+
+.ods-titulo {
+    font-size: 1.4em;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centrar el título de los ODS */
+}
+
+.ods-lista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ods-lista li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+    /* Alinear a la izquierda para mejorar la lectura */
+}
+
+.btn-analizar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    /* Centrar el botón */
+}
+
+.btn-analizar:hover {
+    background-color: #218838;
+}
