@@ -3,42 +3,53 @@
   margin: 20px;
 }
 
-.tarjetas-container {
-  margin: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* Centra las tarjetas horizontalmente */
-  gap: 20px;
-}
-
-.tarjeta {
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.tarjeta-titulo {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.tarjeta-contenido {
-  font-size: 20px;
-  color: #555;
-  word-wrap: break-word;
-  /* Asegura que el contenido largo se divida en varias líneas */
-}
-
 .resultadotitulo {
   color: #ffffff;
   margin-bottom: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/*Otro estilo*/
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.ods-nombre {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #2e7d32;
+  border-radius: 8px;
+}
+
+.ods-porcentaje {
+  font-size: 16px;
+  margin-top: 5px;
 }

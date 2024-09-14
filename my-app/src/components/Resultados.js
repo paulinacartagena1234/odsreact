@@ -33,6 +33,11 @@ function Resultados({ data }) {
     }
   }, [data]);
 
+  const completeData = Object.keys(data).map((key) => ({
+    nombre: key, // Nombre completo del ODS
+    similitud: data[key], // Porcentaje de similitud
+  }));
+
   // Si no hay datos, mostrar algo en el JSX (no antes de los hooks)
   if (!data) {
     return <p>No hay datos disponibles</p>;
@@ -84,19 +89,30 @@ function Resultados({ data }) {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <h2 className="resultadotitulo">Resultados del Análisis</h2>
-      <div className="tarjetas-container">
-        {Object.keys(data).map((key) => {
-          const value = data[key];
-          const roundedValue =
-            typeof value === "number" ? value.toFixed(5) : value; // Redondeo a 5 decimales si es un número
-          return (
-            <div className="tarjeta" key={key}>
-              <h3 className="tarjeta-titulo">{key}</h3>
-              <p className="tarjeta-contenido">{roundedValue}</p>
-            </div>
-          );
-        })}
+
+      <div className="resultados-ordenados">
+        <h2
+          style={{ textAlign: "center", marginBottom: "20px", color: "#fff" }}
+        >
+          Resultados del Análisis
+        </h2>
+        <div className="cards-container">
+          {completeData
+            .slice()
+            .sort((a, b) => b.similitud - a.similitud) // Ordena de mayor a menor
+            .map((item, index) => (
+              <div className="card-item" key={index}>
+                <h3 className="ods-nombre">{item.nombre}</h3>
+                <div className="progress-bar-container">
+                  <div
+                    className="progress-bar"
+                    style={{ width: `${item.similitud}%` }}
+                  ></div>
+                </div>
+                <p className="ods-porcentaje">{item.similitud.toFixed(2)}%</p>
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );

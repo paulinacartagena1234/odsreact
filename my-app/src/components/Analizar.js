@@ -57,14 +57,21 @@ function Analizar({ onResults }) {
       alert("Error al conectar con la API.");
       setIsLoading(false);
     };
-
-    xhr.open("POST", "https://pruebaapiods-4.onrender.com/upload", true);
+    //http://127.0.0.1:8080/upload para prueba
+    //https://pruebaapiods-4.onrender.com/upload para el server de verdad :D
+    xhr.open("POST", "http://127.0.0.1:8081/upload", true);
     xhr.send(formData);
   };
 
   return (
     <div className="analizar">
       <h2 className="analizartitulo">Analizar Documento</h2>
+      <p className="instrucciones">
+        Elige un archivo PDF o Word (no se aceptan otros formatos) y luego haz
+        clic en el botón "Analizar" para iniciar el proceso. Asegúrate de
+        seleccionar un archivo válido para obtener los resultados de manera
+        correcta.
+      </p>
       <input
         type="file"
         accept=".pdf, .doc, .docx"

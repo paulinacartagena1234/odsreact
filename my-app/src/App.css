@@ -1,7 +1,7 @@
 body {
   margin: 3em;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", "Roboto", Arial, sans-serif;
   display: flex;
   background: linear-gradient(to bottom, #93b995, #2e7d32);
   justify-content: center;
@@ -22,7 +22,6 @@ body {
   text-decoration: none;
   text-align: center;
   padding: 20px;
-
 }
 
 .App {
