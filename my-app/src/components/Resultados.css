@@ -1,44 +1,44 @@
 .resultados {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 .tarjetas-container {
-    margin: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Centra las tarjetas horizontalmente */
-    gap: 20px;
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centra las tarjetas horizontalmente */
+  gap: 20px;
 }
 
 .tarjeta {
-    border: 1px solid #ccc;
-    padding: 16px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .tarjeta-titulo {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
 }
 
 .tarjeta-contenido {
-    font-size: 20px;
-    color: #555;
-    word-wrap: break-word;
-    /* Asegura que el contenido largo se divida en varias líneas */
+  font-size: 20px;
+  color: #555;
+  word-wrap: break-word;
+  /* Asegura que el contenido largo se divida en varias líneas */
 }
 
 .resultadotitulo {
-    color: #ffffff;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

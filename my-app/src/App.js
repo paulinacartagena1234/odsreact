@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
-import './App.css';
-import Inicio from './components/Inicio';
-import Analizar from './components/Analizar';
-import Resultados from './components/Resultados';
-import logo from './assets/logo.png';
+import React, { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
+import "./App.css";
+import Inicio from "./components/Inicio";
+import Analizar from "./components/Analizar";
+import Resultados from "./components/Resultados";
+import logo from "./assets/logo.png";
 
 function App() {
   const [results, setResults] = useState(null);
@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt="Logo" className="App-logo" />
+        <a href="https://www.tdea.edu.co/">
+          <img src={logo} alt="Logo" className="App-logo" />
+        </a>
         <nav>
           <Link to="/" className="nav-link">
             Inicio
@@ -25,7 +27,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/analizar" element={<Analizar onResults={setResults} />} />
+          <Route
+            path="/analizar"
+            element={<Analizar onResults={setResults} />}
+          />
           <Route path="/resultados" element={<Resultados data={results} />} />
         </Routes>
       </main>
