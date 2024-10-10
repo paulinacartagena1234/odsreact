@@ -57,9 +57,9 @@ function Analizar({ onResults }) {
       alert("Error al conectar con la API.");
       setIsLoading(false);
     };
-    //http://127.0.0.1:8081/upload para prueba
+    //http://192.168.110.213:10000/upload para prueba
     //https://pruebaapiods-4.onrender.com/upload para el server de verdad :D
-    xhr.open("POST", "http://127.0.0.1:8081/upload", true);
+    xhr.open("POST", "http://192.168.110.213:10000/upload", true);
     xhr.send(formData);
   };
 
